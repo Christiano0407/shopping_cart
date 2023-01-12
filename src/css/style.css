@@ -54,3 +54,12 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+/* === Hidden*/
+.hidden {
+    overflow: hidden;
+}
+
+.display {
+    overflow: visible;
+}

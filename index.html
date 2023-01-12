@@ -22,11 +22,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/src/css/mediaQueries.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <title>Clothing Store |Shopping Cart | Vanilla Javascript</title>
   </head>
   <body>
-    <main></main>
+    <header class="header" id="idHeader">
+      <nav class="navBar" id="idNavBar"></nav>
+
+      <!-- === Nav Mobile === -->
+      <nav class="navMobile hidden" id="navMobile"></nav>
+    </header>
+    <main class="main" id="idMain">
+      <div class="heroSection"></div>
+    </main>
     <!-- === Vanilla Javascript ==== -->
     <script type="module" src="./index.js"></script>
   </body>
