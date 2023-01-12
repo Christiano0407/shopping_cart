@@ -1,0 +1,53 @@
+/*=============== Mobile ========================================*/
+@media (max-width: 360px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 640px) {
+  .navMobile {
+    overflow: visible;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 767px) {
+}
+
+/* @media (min-width: 700px) {
+} */
+
+/*=============== Tablet  ========================================*/
+@media screen and (min-width: 768px) {
+  .navMobile {
+    overflow: hidden;
+  }
+}
+
+/*=============== Screen Laptop ===================================*/
+@media screen and (min-width: 1024px) {
+}
+
+/*=============== #Option Screen  ===================================*/
+@media only screen and (min-width: 1280px) {
+}
+
+/*=============== Laptop Large Screen  ===================================*/
+@media only screen and (min-width: 1440px) {
+}
+
+/*=============== Laptop Xtra Large =================================*/
+@media only screen and (min-width: 1920px) {
+}
+
+/* =Animation =*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
