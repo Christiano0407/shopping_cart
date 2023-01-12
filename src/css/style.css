@@ -4,6 +4,11 @@
   --bg-black2: #333;
   --background-white: #ffffff;
   --bg-white2: #f2f2f2;
+  --bg-primary:#fdfcdc;
+  --bg-secondary: #00afb9;
+  --bg-third: #fed9b7;
+  --bg-extra: #f07167;
+  --bg-extra-Plus: #0081a7; 
 /* === font family === */
   --font-roboto: 'Poppins', sans-serif;
  /* === Margin ===  */
@@ -59,9 +64,18 @@ img {
 
 /* === Hidden*/
 .hidden {
-    overflow: hidden;
+  /*   overflow: hidden; */
+  display: none;
 }
 
 .display {
-    overflow: visible;
+  /*   overflow: visible; */
+    display: flex;
+}
+
+/* ===  Main === */
+.main {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    padding: var(--padding);
 }

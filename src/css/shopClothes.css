@@ -1,5 +1,29 @@
-.header {
+.header,
+.navBar,
+.navMobile {
   width: 100%;
-  margin: var(--margin);
-  padding: var(--padding);
+  background-color: var(--bg-primary);
+}
+
+.iconLogo svg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.menuNav,
+.iconShop svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.btn-shop,
+.btnNavMenu {
+  width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+button svg:active {
+  transform: scale(0.9);
 }

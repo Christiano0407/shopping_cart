@@ -6,12 +6,68 @@
 }
 
 @media (max-width: 640px) {
-  .navMobile {
-    overflow: visible;
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .list {
+    display: none;
+  }
+  .menuNav {
+    display: flex;
+  }
+  #navMobile {
+    width: 100%;
+    height: 35rem;
+    padding: 1rem;
+  }
+  #navMobile .mobile-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+  .mobile-shop .mobile-shop__list a {
+    font-size: var(--font-mdPlus);
+    font-weight: 700;
+    color: var(--bg-secondary);
   }
 }
 
-@media (min-width: 641px) and (max-width: 767px) {
+@media (min-width: 641px) and (max-width: 768px) {
+  .navMobile {
+    display: none;
+  }
+  .menuNav {
+    display: none;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: nowrap;
+  }
+  .list {
+    width: 35rem;
+  }
+  .list-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .list-shop__text a {
+    color: var(--bg-black2);
+    font-size: var(--font-md);
+    font-weight: 500;
+  }
 }
 
 /* @media (min-width: 700px) {
@@ -20,7 +76,31 @@
 /*=============== Tablet  ========================================*/
 @media screen and (min-width: 768px) {
   .navMobile {
-    overflow: hidden;
+    display: none;
+  }
+  .menuNav {
+    display: none;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: nowrap;
+  }
+  .list {
+    width: 35rem;
+  }
+  .list-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .list-shop__text a {
+    color: var(--bg-secondary);
+    font-size: var(--font-md);
+    font-weight: 500;
   }
 }
 
