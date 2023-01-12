@@ -1,3 +1,10 @@
+:root {
+  --background-black: #111111;
+  --bg-black2: #333;
+  --background-white: #ffffff;
+  --bg-white2: #f2f2f2;
+}
+
 * {
   margin: 0;
   padding: 0;
