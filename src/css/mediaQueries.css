@@ -23,6 +23,8 @@
     width: 100%;
     height: 35rem;
     padding: 1rem;
+    position: absolute;
+    z-index: 10;
   }
   #navMobile .mobile-shop {
     display: flex;
@@ -36,6 +38,41 @@
   .mobile-shop .mobile-shop__list a {
     font-size: var(--font-mdPlus);
     font-weight: 700;
+    color: var(--bg-secondary);
+  }
+
+  .heroSection {
+    min-height: 15rem;
+    height: 25rem;
+  }
+
+  .heroSection-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+
+  .heroSection-text .text-hero {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--bg-secondary);
+  }
+
+  .heroSection figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroSection .buy-btn {
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
     color: var(--bg-secondary);
   }
 }
@@ -67,6 +104,15 @@
     color: var(--bg-black2);
     font-size: var(--font-md);
     font-weight: 500;
+  }
+  .heroSection {
+    padding: var(--padding);
+    height: 35rem;
+    margin: 0 auto;
+  }
+  .heroSection figure {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -102,10 +148,48 @@
     font-size: var(--font-md);
     font-weight: 500;
   }
+  .heroSection {
+    padding: var(--padding);
+    height: 35rem;
+    margin: 0 auto;
+  }
+  .heroSection-text {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1.5rem;
+  }
+  .heroSection-text .text-hero {
+    margin-bottom: 2.5rem;
+    font-weight: 900;
+    color: var(--bg-secondary);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+
+  .heroSection figure {
+    height: 100%;
+    width: 100%;
+  }
+  .buy-btn {
+    padding: 1.5rem 3.5rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: var(--bg-secondary);
+  }
 }
 
 /*=============== Screen Laptop ===================================*/
 @media screen and (min-width: 1024px) {
+  .heroSection-text {
+    margin-left: 5rem;
+  }
+  .heroSection-text .text-hero {
+    font-size: 3.4rem;
+  }
 }
 
 /*=============== #Option Screen  ===================================*/

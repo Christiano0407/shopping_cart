@@ -76,6 +76,4 @@ img {
 /* ===  Main === */
 .main {
     width: 100%;
-    background-color: var(--bg-secondary);
-    padding: var(--padding);
 }

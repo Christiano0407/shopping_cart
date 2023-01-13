@@ -27,3 +27,37 @@ button {
 button svg:active {
   transform: scale(0.9);
 }
+
+.main .heroSection {
+  width: 100%;
+}
+
+/* === Main === */
+.main {
+  padding: var(--padding);
+}
+
+.main .section-cards {
+  width: 100%;
+  display: grid;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+.heroSection {
+  position: relative;
+}
+.heroSection .heroSection-text {
+  position: absolute;
+  z-index: 5;
+}
+
+.heroSection figure img {
+  filter: brightness(0.5);
+}
+
+/* === Button*/
+button {
+  border-radius: 0.5rem;
+  background-color: var(--bg-primary);
+  font-weight: 700;
+}
