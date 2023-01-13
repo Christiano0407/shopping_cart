@@ -49,8 +49,8 @@
           </ul>
         </div>
 
-        <div class="iconShop">
-          <button class="btn btn-shop" id="idBtnshop">
+        <div id="idIcon" class="iconShop">
+          <button class="btn btn-shop" id="idBtnShop">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
@@ -58,6 +58,7 @@
               />
             </svg>
           </button>
+          <div id="idAmount" class="card-amount">0</div>
         </div>
 
         <div class="menuNav">
@@ -87,19 +88,105 @@
     <main class="main" id="idMain">
       <div class="heroSection">
         <div class="heroSection-text">
-          <h1 class="text-hero">Grab Upto 50% Off On selected Headphone</h1>
+          <h1 class="text-hero">Grab Upto 50% Off On selected Clothes</h1>
           <button class="btn buy-btn">Buy Now</button>
         </div>
 
         <figure class="">
-          <img src="./src/img/man.png" alt="heroImg" />
+          <img src="./src/img/shoppingCoffe2.jpg" alt="heroImg" />
         </figure>
       </div>
-      <section class="section-cards"></section>
+      <!-- === Card === -->
+      <section class="section-plus">
+        <div class="section-cards">
+          <div class="card">
+            <div class="card-title">
+              <h1 class="card-tittle__clothes">Clothes New Shirt</h1>
+            </div>
+
+            <div class="card-img">
+              <figure class="card-img__figure">
+                <img
+                  class="card-img__image"
+                  src="/src/img/shirtImg/shirt.jpg"
+                  alt="shirt-img"
+                />
+              </figure>
+            </div>
+            <div class="card-plus">
+              <span class="card-plus__cash">$1500</span>
+              <i class="fa-solid fa-plus"></i>
+              <button class="btn btn-card">buy</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <h1 class="card-tittle__clothes">Clothes New Shirt</h1>
+            </div>
+
+            <div class="card-img">
+              <figure class="card-img__figure">
+                <img
+                  class="card-img__image"
+                  src="/src/img/shirtImg/shirt.jpg"
+                  alt="shirt-img"
+                />
+              </figure>
+            </div>
+            <div class="card-plus">
+              <span class="card-plus__cash">$1500</span>
+              <i class="fa-solid fa-plus"></i>
+              <button class="btn btn-card">buy</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <h1 class="card-tittle__clothes">Clothes New Shirt</h1>
+            </div>
+
+            <div class="card-img">
+              <figure class="card-img__figure">
+                <img
+                  class="card-img__image"
+                  src="/src/img/shirtImg/shirt.jpg"
+                  alt="shirt-img"
+                />
+              </figure>
+            </div>
+            <div class="card-plus">
+              <span class="card-plus__cash">$1500</span>
+              <i class="fa-solid fa-plus"></i>
+              <button class="btn btn-card">buy</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h1 class="card-tittle__clothes">Clothes New Shirt</h1>
+            </div>
+
+            <div class="card-img">
+              <figure class="card-img__figure">
+                <img
+                  class="card-img__image"
+                  src="/src/img/shirtImg/shirt.jpg"
+                  alt="shirt-img"
+                />
+              </figure>
+            </div>
+            <div class="card-plus">
+              <span class="card-plus__cash">$1500</span>
+              <i class="fa-solid fa-plus"></i>
+              <button class="btn btn-card">buy</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- === Footer === -->
     <footer class="footer-shop" id="idFooter"></footer>
     <!-- === Vanilla Javascript ==== -->
-    <script type="module" src="./index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

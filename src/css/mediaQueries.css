@@ -75,6 +75,9 @@
     font-size: 1.8rem;
     color: var(--bg-secondary);
   }
+  .main .section-cards {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
@@ -128,6 +131,7 @@
     display: none;
   }
   .navBar {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,6 +183,10 @@
     font-weight: 900;
     font-size: 1.6rem;
     color: var(--bg-secondary);
+  }
+
+  .main .section-cards {
+    gap: 2rem;
   }
 }
 
