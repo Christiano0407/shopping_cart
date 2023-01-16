@@ -105,6 +105,26 @@ button svg:active {
 .card .card-img__image {
   border-radius: 1rem;
 }
+
+.card-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+.card-content__title {
+  margin-bottom: 1rem;
+}
+
+.card-content__text {
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
 .card-plus {
   width: 100%;
   margin: 1rem auto;
@@ -124,6 +144,14 @@ button svg:active {
   color: var(--background-white);
   font-weight: 500;
   border-radius: 0.5rem;
+}
+
+.card-plus__more {
+  width: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
 }
 
 /* === Button*/

@@ -78,6 +78,13 @@
   .main .section-cards {
     gap: 1rem;
   }
+  .card-content__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .card-content__text {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
@@ -187,6 +194,14 @@
 
   .main .section-cards {
     gap: 2rem;
+  }
+
+  .card-content__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .card-content__text {
+    font-size: 1.2rem;
   }
 }
 
