@@ -3,7 +3,7 @@ const btnMenu = document.querySelector(`#idBtnMenu`);
 const navMobile = document.querySelector(`#navMobile`);
 //**! === Add Shopping Cart */
 const btnShop = document.querySelector(`#idBtnShop`);
-const cardAmount = document.querySelector(`.card-amount`);
+const cardAmount = document.querySelector(`#idAmount`);
 
 //const btnMinus = document.querySelector(`.btn-minus`);
 //const btnPlus = document.querySelector(`btn-plus`);
@@ -66,7 +66,8 @@ btnShop.addEventListener(`click`, () => {
 });
 
 //** === Basket */
-let basket = [];
+//let basket = [];
+let basket = JSON.parse(localStorage.getItem(`data`)) || [];
 //console.log(basket);
 
 //** === Shop && Custom Element */
@@ -74,6 +75,7 @@ const generateShop = () => {
   return (cardShop.innerHTML = clothesShopData
     .map((item) => {
       let { id, name, price, text, img } = item;
+      let search = basket.find((item) => item.id === id) || [];
       return `
      <div id=cardProductId-${id}  class="card">
         <div class="card-title">
@@ -101,7 +103,9 @@ const generateShop = () => {
             <button onclick="decrement(${id})"  class="btn-minus">
               <i class="fa-solid fa-minus"></i>
             </button>
-            <span id=${id} class="quantity">0</span>
+            <span id=${id} class="quantity">${
+        search.item === undefined ? 0 : search.item
+      }</span>
             <button onclick="increment(${id})"  class="btn-plus">
               <i class="fa-solid fa-plus"></i>
             </button>
@@ -147,14 +151,26 @@ const increment = (id) => {
   } else {
     search.item += 1;
   }
+  // === LocalStorage ===
+  localStorage.setItem('data', JSON.stringify(basket));
+
   //console.log(basket);
   update(selectedID);
 };
 
-let update = (id) => {
+const update = (id) => {
   let search = basket.find((item) => item.id === id);
   console.log(search.item);
 
   //document.getElementById(id).innerHTML = search.item;
   document.querySelector(`.quantity`).innerHTML = search.item;
+  calculation();
+};
+
+//** === Calculation  */
+const calculation = () => {
+  cardAmount.innerHTML = basket
+    .map((element) => element.item)
+    .reduce((x, y) => x + y, 0);
+  // console.log(basket.map((items) => items.item));
 };
