@@ -1,10 +1,14 @@
 //**TODO === ====================  ===  Shopping Cart === ===========================  === */
 const btnMenu = document.querySelector(`#idBtnMenu`);
 const navMobile = document.querySelector(`#navMobile`);
-const cardAmount = document.querySelector(`.card-amount`);
+//**! === Add Shopping Cart */
 const btnShop = document.querySelector(`#idBtnShop`);
-//** === Events */
+const cardAmount = document.querySelector(`.card-amount`);
+const quantity = document.querySelector(`.quantity`);
+const btnMinus = document.querySelector(`.btn-minus`);
+const btnPlus = document.querySelector(`btn-plus`);
 
+//** === Events */
 btnMenu.addEventListener(`click`, () => {
   console.log('menu');
 

@@ -98,10 +98,6 @@ button svg:active {
   text-align: center;
 }
 
-.card .card-img__figure {
-  height: 35rem;
-}
-
 .card .card-img__image {
   border-radius: 1rem;
 }
@@ -134,7 +130,7 @@ button svg:active {
   align-items: center;
 }
 .card-plus__cash {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #111;
   font-weight: 700;
 }
@@ -159,4 +155,18 @@ button {
   border-radius: 0.5rem;
   background-color: var(--bg-primary);
   font-weight: 700;
+}
+
+.btn-minus:active {
+  transform: scale(0.9);
+}
+.btn-plus:active {
+  transform: scale(0.9);
+}
+
+/* === Quantity === */
+.quantity {
+  color: #111;
+  font-size: 1.4rem;
+  font-weight: 500;
 }

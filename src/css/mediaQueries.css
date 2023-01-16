@@ -85,6 +85,9 @@
   .card-content__text {
     font-size: 1rem;
   }
+  .card .card-img__figure {
+    height: 25rem;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
@@ -202,6 +205,9 @@
   }
   .card-content__text {
     font-size: 1.2rem;
+  }
+  .card .card-img__figure {
+    height: 20rem;
   }
 }
 
