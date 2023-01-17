@@ -40,14 +40,19 @@ const generateCartItems = () => {
         <div class="cart-itemBuy">
            <img src="${searchBuy.img}" alt="search-product" >
            <div class="cart-details">
-             <div class="cart-details__title" >${searchBuy.name}</div>
+             <h4 class="cart-details__title">${searchBuy.name}</h4>
+                <div class="cart-details__div" >
+                    <p class="cart-details__price">${searchBuy.price}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
              <div class="cart-details__btn"></div>
-             <h3 class="cart-details__price">${searchBuy.price}</h3>
            </div>
         </div>
      `;
       })
-      .join());
+      .join(''));
   } else {
     //console.log('Basket, not product...');
     cartShopping.innerHTML = ``;
