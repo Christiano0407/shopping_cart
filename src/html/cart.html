@@ -22,16 +22,6 @@
             </svg>
           </a>
         </div>
-
-        <div class="list">
-          <ul class="list-shop">
-            <li class="list-shop__text"><a href="#">Home</a></li>
-            <li class="list-shop__text"><a href="#">Us</a></li>
-            <li class="list-shop__text"><a href="#">Clothes</a></li>
-            <li class="list-shop__text"><a href="#">Blog</a></li>
-            <li class="list-shop__text"><a href="#">Contact</a></li>
-          </ul>
-        </div>
         <!-- === ICON Shop === -->
         <div id="idIcon" class="iconShop">
           <button class="btn btn-shop" id="idBtnShop">
@@ -58,28 +48,36 @@
           </button>
         </div>
       </nav>
-
-      <!-- === Nav Mobile === -->
-      <nav class="navMobile hidden" id="navMobile">
-        <ul class="mobile-shop" id="idMobileShop">
-          <li class="mobile-shop__list"><a href="#">Home</a></li>
-          <li class="mobile-shop__list"><a href="#">Us</a></li>
-          <li class="mobile-shop__list"><a href="#">Clothes</a></li>
-          <li class="mobile-shop__list"><a href="#">Blog</a></li>
-          <li class="mobile-shop__list"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main class="main" id="idMain">
-      <!-- === Card === -->
-      <section class="section-plus">
-        <div class="section-cards" id="cardShop"></div>
+      <div class="total-cart">
+        <h2 id="idTotal" class="total-text">
+          Total:<span id="idTotalPlus"></span>
+        </h2>
+        <div class="total-cart__btn">
+          <button class="btn btn-checkout">Checkout</button>
+          <button class="btn btn-clear">Clear Cart</button>
+        </div>
+      </div>
+
+      <!-- === Label Text === -->
+      <div id="label" class="text-center"></div>
+
+      <!-- === Shopping Cart === -->
+      <section id="idShopping" class="sectionShopping-cart">
+        <div class="shopping-cart" id="shoppingCart"></div>
       </section>
+
+      <!-- === Card === -->
+      <!--  <section class="section-plus">
+        <div class="section-cards" id="cardShop"></div>
+      </section> -->
     </main>
 
     <!-- === Javascript === -->
     <script src="/src/js/data.js"></script>
-    <script src="/index.js"></script>
+    <script src="/src/js/cart.js"></script>
+    <!--  <script src="/index.js"></script> -->
   </body>
 </html>
