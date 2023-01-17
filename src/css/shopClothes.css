@@ -180,7 +180,7 @@ button {
   color: var(--bg-white2);
 }
 
-/* ======================  === === === Cart HTML === === === ============================== */
+/*+ ======================  === === === Cart HTML === === === ============================== +*/
 /* === Total Cart === Cart HTML === */
 .total-cart {
   width: 90%;
@@ -219,4 +219,51 @@ button {
   width: 100%;
   padding: 1rem;
   margin: 2rem auto;
+}
+/*
+ === Style Label Button === 
+*/
+.text-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.label-text {
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #111;
+  text-align: center;
+}
+
+.btn-home {
+  padding: 1.5rem 3.5rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: #111;
+  color: #f2f2f2;
+  margin: 2rem auto;
+}
+.btn-home:active {
+  transform: scale(0.9);
+}
+/* === Shopping Cart === */
+.shopping-cart {
+  width: 100%;
+  margin: 1rem auto;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  height: 30rem;
+}
+.shopping-cart .cart-itemBuy {
+  height: 100%;
+  padding: 1rem;
+}
+.cart-itemBuy img {
+  border-radius: 1rem;
 }
