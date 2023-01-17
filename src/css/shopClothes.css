@@ -255,15 +255,39 @@ button {
 .shopping-cart {
   width: 100%;
   margin: 1rem auto;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   align-items: center;
-  height: 30rem;
+  height: 15rem;
 }
 .shopping-cart .cart-itemBuy {
   height: 100%;
   padding: 1rem;
+  display: flex;
+  outline: 4px solid #222;
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
 }
 .cart-itemBuy img {
   border-radius: 1rem;
+}
+.cart-details {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-details__title {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto;
+}
+.card-details__price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 auto;
 }

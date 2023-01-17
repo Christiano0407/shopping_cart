@@ -25,8 +25,7 @@ const calculation = () => {
 };
 calculation();
 
-//**! === Cart Items */
-//== Create Custom Element AND add Product Cart ===
+//**! === Cart Items && Create Custom Element AND add Product Cart */
 const generateCartItems = () => {
   if (basket.length !== 0) {
     //console.log('Basket is not Empty');
@@ -40,6 +39,11 @@ const generateCartItems = () => {
         return `
         <div class="cart-itemBuy">
            <img src="${searchBuy.img}" alt="search-product" >
+           <div class="cart-details">
+             <div class="cart-details__title" >${searchBuy.name}</div>
+             <div class="cart-details__btn"></div>
+             <h3 class="cart-details__price">${searchBuy.price}</h3>
+           </div>
         </div>
      `;
       })
