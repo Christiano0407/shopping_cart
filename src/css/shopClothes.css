@@ -19,6 +19,7 @@
 .btn-shop,
 .btnNavMenu {
   width: 100%;
+  cursor: pointer;
 }
 button {
   outline: none;

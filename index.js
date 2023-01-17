@@ -98,7 +98,7 @@ const generateShop = () => {
           </p>
         </div>
         <div class="card-plus">
-          <span class="card-plus__cash">${item.price}</span>
+          <span class="card-plus__cash">${price}</span>
           <div class="card-plus__more">
             <button onclick="decrement(${id})"  class="btn-minus">
               <i class="fa-solid fa-minus"></i>
@@ -128,13 +128,17 @@ const decrement = (id) => {
 
   let search = basket.find((item) => item.id === selectedID);
 
-  if (search.item === 0) return;
+  if (search === undefined) return;
+  else if (search.item === 0) return;
   else {
     search.item -= 1;
   }
-  //console.log(basket);
 
+  //console.log(basket);
   update(selectedID);
+  // === Enter Local Storage
+  basket = basket.filter((element) => element.item !== 0);
+  localStorage.setItem('data', JSON.stringify(basket));
 };
 
 const increment = (id) => {
@@ -151,16 +155,16 @@ const increment = (id) => {
   } else {
     search.item += 1;
   }
-  // === LocalStorage ===
-  localStorage.setItem('data', JSON.stringify(basket));
-
   //console.log(basket);
   update(selectedID);
+
+  // === LocalStorage ===
+  localStorage.setItem('data', JSON.stringify(basket));
 };
 
 const update = (id) => {
   let search = basket.find((item) => item.id === id);
-  console.log(search.item);
+  // console.log(search.item);
 
   //document.getElementById(id).innerHTML = search.item;
   document.querySelector(`.quantity`).innerHTML = search.item;
@@ -174,3 +178,4 @@ const calculation = () => {
     .reduce((x, y) => x + y, 0);
   // console.log(basket.map((items) => items.item));
 };
+calculation();
