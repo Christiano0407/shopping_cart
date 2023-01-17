@@ -59,7 +59,7 @@ button svg:active {
 }
 
 .heroSection figure img {
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 /* === Icons Shop */
 .iconShop {
@@ -213,4 +213,10 @@ button {
 }
 .btn-clear {
   background-color: var(--bg-extra);
+}
+
+.sectionShopping-cart {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem auto;
 }
