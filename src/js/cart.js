@@ -3,7 +3,7 @@
 //import { clothesShopData } from './data.js';
 
 const cardAmount = document.querySelector(`#idAmount`);
-const btnCheckout = document.getElementById(`#btnClear`);
+const btnCheckout = document.getElementById(`btnCheckout`);
 const btnClear = document.getElementById(`btnClear`);
 const shoppingSection = document.querySelector(`#idShopping`);
 const cartShopping = document.querySelector(`#shoppingCart`);
@@ -97,4 +97,6 @@ const totalAmount = () => {
   } else return;
 };
 
-totalAmount();
+btnCheckout.addEventListener(`click`, () => {
+  totalAmount();
+});
