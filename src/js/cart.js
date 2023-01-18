@@ -25,12 +25,6 @@ const calculation = () => {
 };
 calculation();
 
-//**! ===  Clear && Remove ===  */
-
-btnClear.addEventListener('click', () => {
-  console.log('Clear');
-});
-
 //**! === Cart Items && Create Custom Element AND add Product Cart */
 const generateCartItems = () => {
   if (basket.length !== 0) {
@@ -78,6 +72,22 @@ const generateCartItems = () => {
 
 generateCartItems();
 
+/* const decrement = (id) => {
+  let selectedID = id;
+  //console.log(selectedID);
+
+  let search = basket.find((item) => item.id === selectedID);
+
+  if (search === undefined) return;
+  else if (search.item === 0) return;
+  else {
+    search.item -= 1;
+  }
+  // === Enter Local Storage
+  basket = basket.filter((element) => element.item !== 0);
+  localStorage.setItem('data', JSON.stringify(basket));
+};
+ */
 const remove = (id) => {
   let selectedRemove = id;
   console.log(selectedRemove);
@@ -97,6 +107,15 @@ const totalAmount = () => {
   } else return;
 };
 
+//**! === Checkout &&  Clear && Remove ===  */
 btnCheckout.addEventListener(`click`, () => {
   totalAmount();
+});
+
+btnClear.addEventListener('click', () => {
+  console.log('Clear');
+  //decrement();
+  basket = [];
+  generateCartItems();
+  localStorage.setItem('data', JSON.stringify(basket));
 });
