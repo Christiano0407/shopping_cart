@@ -4,11 +4,11 @@
 
 const cardAmount = document.querySelector(`#idAmount`);
 const btnCheckout = document.getElementById(`#btnClear`);
-const btnClear = document.getElementById(`#btnClear`);
+const btnClear = document.getElementById(`btnClear`);
 const shoppingSection = document.querySelector(`#idShopping`);
 const cartShopping = document.querySelector(`#shoppingCart`);
 const label = document.getElementById(`label`);
-
+const totalPlus = document.getElementById(`idTotalPlus`);
 //console.log(clothesShopData);
 
 //** === === ============ Events && Code Shopping Cart */
@@ -24,6 +24,12 @@ const calculation = () => {
   // console.log(basket.map((items) => items.item));
 };
 calculation();
+
+//**! ===  Clear && Remove ===  */
+
+btnClear.addEventListener('click', () => {
+  console.log('Clear');
+});
 
 //**! === Cart Items && Create Custom Element AND add Product Cart */
 const generateCartItems = () => {
@@ -42,12 +48,17 @@ const generateCartItems = () => {
            <div class="cart-details">
              <h4 class="cart-details__title">${searchBuy.name}</h4>
                 <div class="cart-details__div" >
-                    <p class="cart-details__price">${searchBuy.price}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
+                    <p class="cart-details__price">$${searchBuy.price}</p>
+                    <button onclick="remove(${id})" class="btn-delete" >
+                       <i class="fa-solid fa-x"></i>
+                    </button>
                 </div>
-             <div class="cart-details__btn"></div>
+              <div class="quantity" id="${id}"><span>Product: ${
+          item * searchBuy.price
+        }</span></div>
+             <div class="cart-details__btn">
+                <button class="btn btn-cartBuy">Buy</button>
+             </div>
            </div>
         </div>
      `;
@@ -64,4 +75,26 @@ const generateCartItems = () => {
     `;
   }
 };
+
 generateCartItems();
+
+const remove = (id) => {
+  let selectedRemove = id;
+  console.log(selectedRemove);
+};
+//**! === Total Pay */
+const totalAmount = () => {
+  if (basket.length !== 0) {
+    let amount = basket
+      .map((element) => {
+        let { item, id } = element;
+        let search = clothesShopData.find((product) => product.id === id || []);
+        return item * search.price;
+      })
+      .reduce((x, y) => x + y, 0);
+    //console.log(amount);
+    totalPlus.innerHTML = amount;
+  } else return;
+};
+
+totalAmount();

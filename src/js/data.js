@@ -1,5 +1,4 @@
 //** === Data */
-
 const clothesShopData = [
   {
     id: `clothesOne`,
