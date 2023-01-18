@@ -107,7 +107,7 @@ const totalAmount = () => {
   } else return;
 };
 
-//**! === Checkout &&  Clear && Remove ===  */
+//**! === Checkout &&  Clear && Remove === ====  Finished ==== */
 btnCheckout.addEventListener(`click`, () => {
   totalAmount();
 });
