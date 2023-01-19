@@ -26,6 +26,13 @@ Build Shopping Cart with Javascript Vanilla.
 
 [Google-Font](https://fonts.google.com/)
 
+```
+
+ /* === font family === */
+  --font-roboto: 'Poppins', sans-serif;
+
+```
+
 > Font Awesome
 
 [font-awesome](https://fontawesome.com/)
@@ -55,6 +62,10 @@ Build Shopping Cart with Javascript Vanilla.
 > Coolors
 
 [coolors](https://coolors.co/)
+
+## Little Design System
+
+> CSS Style Variable
 
 ```
 
