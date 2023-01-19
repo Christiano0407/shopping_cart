@@ -12,6 +12,46 @@ Build Shopping Cart with Javascript Vanilla.
 
 [Dribble_Design](https://dribbble.com/shots/19614098-Shopcart-E-Commerce-Product-Page)
 
+## Tools Web Develooper & Design
+
+> CDN ( Content Delivery Network )
+
+[](https://cdnjs.com/)
+
+> Google Fonts
+
+[](https://fonts.google.com/)
+
+> Font Awesome
+
+[](https://fontawesome.com/)
+
+> Editor.md
+
+[](https://pandao.github.io/editor.md/en.html)
+
+## Mobile && Tablet && Desktop
+
+> Mobile
+
+![](/src/img/screenShoot/shoppingCartMobile.png)
+
+![](/src/img/screenShoot/shoppingCartMobile-plus.png)
+
+> Tablet
+
+![](/src/img/screenShoot/tablet.png)
+
+> Screen
+
+![](/src/img/screenShoot/screenPlus.png)
+
+> Pay Shopping Cart
+
+![](/src/img/screenShoot/shoppingCart-Pay.png)
+
+![](/src/img/screenShoot/shoppingCart-return.png)
+
 ### License MIT
 
 MIT License
