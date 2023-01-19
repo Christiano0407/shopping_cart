@@ -16,19 +16,19 @@ Build Shopping Cart with Javascript Vanilla.
 
 > CDN ( Content Delivery Network )
 
-[]("https://cdnjs.com/")
+[CDN](https://cdnjs.com/)
 
 > Google Fonts
 
-[]("https://fonts.google.com/")
+[Google-Font](https://fonts.google.com/)
 
 > Font Awesome
 
-[]("https://fontawesome.com/")
+[font-awesome](https://fontawesome.com/)
 
 > Editor.md
 
-[]("https://pandao.github.io/editor.md/en.html")
+[editor_md](https://pandao.github.io/editor.md/en.html)
 
 ## Mobile && Tablet && Desktop
 
