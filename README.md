@@ -36,7 +36,7 @@ Build Shopping Cart with Javascript Vanilla.
 
 `$ npm i bootstrap-icons`
 
-## Images: Unsplash && Pexles
+## Images: Unsplash && Pexels
 
 > Pexels
 
