@@ -50,6 +50,44 @@ Build Shopping Cart with Javascript Vanilla.
 
 [unsplash](https://unsplash.com/es)
 
+## Palette Color
+
+> Coolors
+
+[coolors](https://coolors.co/)
+
+```
+
+/* === Background === */
+  --background-black: #111111;
+  --bg-black2: #333;
+  --background-white: #ffffff;
+  --bg-white2: #f2f2f2;
+  --bg-primary: #fdfcdc;
+  --bg-secondary: #00afb9;
+  --bg-third: #fed9b7;
+  --bg-extra: #f07167;
+  --bg-extra-Plus: #0081a7;
+  /* === font family === */
+  --font-roboto: 'Poppins', sans-serif;
+  /* === Margin ===  */
+  --margin: 2rem auto;
+  --margin-top: 2rem;
+  --margin-bottom: 2rem;
+  /* === Font Size ==== */
+  --font-sm: 1.2rem;
+  --font-md: 1.4rem;
+  --font-mdPlus: 1.6rem;
+  --font-big: 1.8rem;
+  --font-lg: 2.4rem;
+  /* === Padding === */
+  --padding: 1rem;
+  --padding-btn: 1.5rem 3rem;
+  /* === Border Radius === */
+  --border: 2rem;
+
+```
+
 ## Mobile && Tablet && Desktop
 
 > Mobile
