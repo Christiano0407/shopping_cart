@@ -175,9 +175,69 @@ button {
 /* === Footer === */
 .footer-shop {
   padding: 1rem;
-  height: 30rem;
   background-color: var(--bg-primary);
   color: var(--bg-white2);
+}
+
+.footer-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+.footer-list .footer-list__contact {
+  width: 100%;
+  padding: 1rem;
+}
+.footer-list__contact .contact-ul {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-ul .contact-li a {
+  color: #111;
+  font-weight: 600;
+  filter: opacity(0.6);
+}
+.iconLogo {
+  padding: 1rem;
+}
+.footer-socialMedia {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.footer-socialMedia .socialMedia {
+  width: 100%;
+}
+.socialMedia .socialMedia-ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.socialMedia-ul .socialMedia-link i {
+  font-size: 2rem;
+  color: var(--bg-secondary);
+  cursor: pointer;
+}
+.socialMedia-ul .socialMedia-link i:hover {
+  color: #333;
+}
+.footer-copy {
+  margin: 1rem auto;
+  width: 100%;
+  padding: 1rem;
+}
+.footer-copy h2 {
+  text-align: center;
+  font-weight: 700;
+  filter: opacity(0.5);
+  color: #111;
+  font-size: 1.2rem;
 }
 
 /*+ ======================  === === === Cart HTML === === === ============================== +*/

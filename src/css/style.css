@@ -1,26 +1,26 @@
 :root {
-/* === Background === */
+  /* === Background === */
   --background-black: #111111;
   --bg-black2: #333;
   --background-white: #ffffff;
   --bg-white2: #f2f2f2;
-  --bg-primary:#fdfcdc;
+  --bg-primary: #fdfcdc;
   --bg-secondary: #00afb9;
   --bg-third: #fed9b7;
   --bg-extra: #f07167;
-  --bg-extra-Plus: #0081a7; 
-/* === font family === */
+  --bg-extra-Plus: #0081a7;
+  /* === font family === */
   --font-roboto: 'Poppins', sans-serif;
- /* === Margin ===  */
+  /* === Margin ===  */
   --margin: 2rem auto;
   --margin-top: 2rem;
   --margin-bottom: 2rem;
-/* === Font Size ==== */
+  /* === Font Size ==== */
   --font-sm: 1.2rem;
   --font-md: 1.4rem;
   --font-mdPlus: 1.6rem;
   --font-big: 1.8rem;
-  --font-lg: 2.4rem
+  --font-lg: 2.4rem;
   /* === Padding === */
   --padding: 1rem;
   --padding-btn: 1.5rem 3rem;
@@ -70,15 +70,16 @@ img {
 
 .display {
   /*   overflow: visible; */
-    display: flex;
+  display: flex;
 }
 
 /* ===  Main === */
 .main {
-    width: 100%;
+  width: 100%;
 }
 /* == Footer === */
 footer {
- width: 100%;
- margin: 2rem auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }

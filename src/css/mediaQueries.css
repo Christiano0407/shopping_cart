@@ -88,6 +88,15 @@
   .card .card-img__figure {
     height: 25rem;
   }
+  .contact-ul .contact-li a {
+    font-size: 1.2rem;
+  }
+  .title-contact {
+    font-size: 1.4rem;
+    color: var(--bg-secondary);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
@@ -208,6 +217,16 @@
   }
   .card .card-img__figure {
     height: 20rem;
+  }
+  .contact-ul .contact-li a {
+    font-size: 1.4rem;
+  }
+
+  .title-contact {
+    font-size: 1.6rem;
+    color: var(--bg-secondary);
+    font-weight: 900;
+    text-transform: uppercase;
   }
 }
 
