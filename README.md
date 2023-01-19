@@ -4,6 +4,10 @@ Build Shopping Cart with Javascript Vanilla.
 
 ## Project Based Shopping Cart
 
+> References
+
+[freecodeCamp](https://www.youtube.com/@freecodecamp/videos)
+
 > GitHub Project
 
 [JoyShaheb](https://github.com/JoyShaheb/shopping-cart-js/tree/starter-files)
