@@ -30,6 +30,12 @@ Build Shopping Cart with Javascript Vanilla.
 
 [editor_md](https://pandao.github.io/editor.md/en.html)
 
+## Bootstrap
+
+> Bootstrap Icons
+
+`$ npm i bootstrap-icons`
+
 ## Mobile && Tablet && Desktop
 
 > Mobile
